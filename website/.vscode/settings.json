@@ -1,0 +1,11 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "javascript.validate.enable": false,
+    "files.insertFinalNewline": true,
+    "editor.insertSpaces": true,
+    "eslint.enable": true,
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    }
+}

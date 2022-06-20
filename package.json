@@ -1,0 +1,8 @@
+{
+    "name": "gatsby-sites",
+    "private": true,
+    "workspaces": [
+      "website",
+      "blog"
+    ]
+  }

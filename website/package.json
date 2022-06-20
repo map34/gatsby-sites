@@ -1,0 +1,53 @@
+{
+  "name": "adrian-prananda-website",
+  "description": "Adrian Prananda's website",
+  "version": "1.0.17",
+  "author": "Adrian Prananda",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-image": "^1.0.42",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^1.0.24",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-remark-copy-linked-files": "^1.5.30",
+    "gatsby-remark-images": "^1.5.67",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.37",
+    "gatsby-transformer-sharp": "^1.6.22",
+    "lodash": "^4.17.10",
+    "react-ga": "^2.5.3",
+    "react-sizes": "^1.0.4",
+    "react-typist": "^2.0.4",
+    "recharts": "^1.0.1"
+  },
+  "homepage": "https://github.com/map34/website",
+  "keywords": [
+    "gatsby"
+  ],
+  "engines": {
+    "node": "^11.15.0"
+  },
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/map34/website.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gatsby build --prefix-paths",
+    "deploy:firebase": "npm run build && firebase deploy --project website-2a333",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "eslint-plugin-react": "^7.20.0",
+    "firebase-tools": "^8.4.0"
+  }
+}

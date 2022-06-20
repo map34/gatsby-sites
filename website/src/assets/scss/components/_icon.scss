@@ -1,0 +1,34 @@
+///
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+		background-size: cover;
+	}
+
+	.react-icon {
+		background-image: url('../icons/react.png');
+	}
+
+	.gatsby-icon {
+		background-image: url('../icons/gatsby.png');
+	}
+
+	.ga-icon {
+		background-image: url('../icons/google_analytics.png');
+	}
+
+	.sass-icon {
+		background-image: url('../icons/sass.png');
+	}
